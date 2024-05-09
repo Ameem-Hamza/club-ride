@@ -10,11 +10,6 @@ header {
     padding: 20px;
 }
 
-nav {
-    background-color: #666;
-    padding: 10px;
-}
-
 main {
     padding: 20px;
 }
@@ -22,6 +17,12 @@ main {
 label {
     display: block;
     margin-bottom: 5px;
+}
+
+.input {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
 }
 
 input[type="text"],
@@ -50,4 +51,11 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+@media only screen and (max-width: 375px) {
+    .input {
+        width: 100%;
+        float: left;
+    }
 }
